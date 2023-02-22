@@ -116,3 +116,41 @@ span {
 .img-box:hover .main-img {
   left: 65%;
 }
+
+@media screen and (max-width: 1050px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .info h1 {
+    font-size: 4rem;
+    color: #bfcbca;
+    margin-bottom: 1px;
+  }
+  span {
+    font-family: "Manrope", sans-serif;
+    font-size: 5rem;
+    color: #fff;
+  }
+  .info p {
+    font-family: sans-serif;
+    color: aliceblue;
+    line-height: 32px;
+    font-size: 1.2rem;
+  }
+  .img-box {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 32%;
+    height: 32%;
+    position: absolute;
+  }
+  .img-box img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+  }
+}
