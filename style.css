@@ -74,7 +74,7 @@ span {
   font-family: sans-serif;
   color: aliceblue;
   line-height: 32px;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 .icon {
   /* background: aliceblue; */
@@ -98,9 +98,9 @@ span {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  width: 50%;
+  width: 45%;
   height: 85%;
-  right: 25px;
+  right: 5px;
   position: absolute;
 }
 .img-box img {
