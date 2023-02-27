@@ -117,7 +117,289 @@ span {
   left: 65%;
 }
 
-@media screen and (max-width: 1050px) {
+/* macbook */
+@media screen and (max-width: 1280px)  {
+  .hero {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  
+    /* ff 3.6+ */
+    background: -moz-linear-gradient(
+      105deg,
+      rgba(25, 25, 112, 1) 16%,
+      rgba(191, 203, 202, 1) 86%
+    );
+  
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-linear-gradient(
+      105deg,
+      rgba(25, 25, 112, 1) 16%,
+      rgba(191, 203, 202, 1) 86%
+    );
+  
+    /* opera 11.10+ */
+    background: -o-linear-gradient(
+      105deg,
+      rgba(25, 25, 112, 1) 16%,
+      rgba(191, 203, 202, 1) 86%
+    );
+  
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#BFCBCA', endColorstr='#191970', GradientType=0 );
+  
+    /* ie 10+ */
+    background: -ms-linear-gradient(
+      105deg,
+      rgba(25, 25, 112, 1) 16%,
+      rgba(191, 203, 202, 1) 86%
+    );
+  
+    /* global 94%+ browsers support */
+    background: linear-gradient(
+      105deg,
+      rgba(25, 25, 112, 1) 16%,
+      rgba(191, 203, 202, 1) 86%
+    );
+  }
+  .box-info {
+    max-width: 53vw;
+  }
+  .info {
+    margin-left: 4%;
+    margin-top: 1%;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .info h1 {
+    font-size: 5.6rem;
+    color: #bfcbca;
+    margin-bottom: 1px;
+  }
+  span {
+    font-family: "Manrope", sans-serif;
+    font-size: 7rem;
+    color: #fff;
+  }
+  .info p {
+    font-family: sans-serif;
+    color: aliceblue;
+    line-height: 32px;
+    font-size: 1.3rem;
+  }
+  .icon {
+    /* background: aliceblue; */
+    /* padding: 10px 18px; */
+    text-decoration: none;
+    color: #191970;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin: 8px 0;
+  }
+  .icon a {
+    background: aliceblue;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: #191970;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin: 8px 0;
+  }
+  .img-box {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 45%;
+    height: 85%;
+    right: 5px;
+    position: absolute;
+  }
+  .img-box img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+  }
+  .img-box:hover .back-img {
+    bottom: 45px;
+  }
+  .img-box:hover .main-img {
+    left: 60%;
+  }  
+}
+
+
+/* tablet */
+@media screen and (max-width: 900px)  {
+  .hero {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  
+    /* ff 3.6+ */
+    background: -moz-linear-gradient(
+      105deg,
+      rgba(25, 25, 112, 1) 16%,
+      rgba(191, 203, 202, 1) 86%
+    );
+  
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-linear-gradient(
+      105deg,
+      rgba(25, 25, 112, 1) 16%,
+      rgba(191, 203, 202, 1) 86%
+    );
+  
+    /* opera 11.10+ */
+    background: -o-linear-gradient(
+      105deg,
+      rgba(25, 25, 112, 1) 16%,
+      rgba(191, 203, 202, 1) 86%
+    );
+  
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#BFCBCA', endColorstr='#191970', GradientType=0 );
+  
+    /* ie 10+ */
+    background: -ms-linear-gradient(
+      105deg,
+      rgba(25, 25, 112, 1) 16%,
+      rgba(191, 203, 202, 1) 86%
+    );
+  
+    /* global 94%+ browsers support */
+    background: linear-gradient(
+      105deg,
+      rgba(25, 25, 112, 1) 16%,
+      rgba(191, 203, 202, 1) 86%
+    );
+  }
+  .box-info {
+    max-width: 100vw;
+  }
+  .info {
+    margin-left: 4%;
+    margin-top: 2%;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .info h1 {
+    font-size: 5rem;
+    color: #bfcbca;
+    margin-bottom: 1px;
+  }
+  span {
+    font-family: "Manrope", sans-serif;
+    font-size: 7rem;
+    color: #fff;
+  }
+  .info p {
+    font-family: sans-serif;
+    color: aliceblue;
+    line-height: 32px;
+    font-size: 1.6rem;
+  }
+  .icon {
+    text-decoration: none;
+    color: #191970;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin: 8px 0;
+  }
+  .icon a {
+    background: aliceblue;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: #191970;
+    border-radius: 5px;
+    font-size: 2rem;
+    margin: 8px 0;
+  }
+  .img-box {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 45%;
+    height: 85%;
+    right: 5px;
+    position: absolute;
+    margin-bottom: 12vh;
+  }
+  .img-box img {
+    height: 45%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+  }
+  .img-box:hover .back-img {
+    bottom: 500px;
+  }
+  .img-box:hover .main-img {
+    left: 65%;
+  }  
+}
+
+
+/* ipad */
+@media screen and (max-width: 835px)  {
+  .info p {
+    font-family: sans-serif;
+    color: aliceblue;
+    line-height: 32px;
+    font-size: 1.4rem;
+  }
+  .icon {
+    text-decoration: none;
+    color: #191970;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin: 8px 0;
+  }
+  .icon a {
+    background: aliceblue;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: #191970;
+    border-radius: 5px;
+    font-size: 2rem;
+    margin: 8px 0;
+  }
+  .img-box {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 45%;
+    height: 85%;
+    right: 5px;
+    position: absolute;
+    margin-bottom: 12vh;
+  }
+  .img-box img {
+    height: 40%;
+    position: absolute;
+    left: 45%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+  }
+  .img-box:hover .back-img {
+    bottom: 53vh;
+  }
+}
+
+/* iphone */
+@media screen and (max-width: 450px) {
   .hero {
     background-color: #191970;
     display: flex;
@@ -128,21 +410,21 @@ span {
     margin-right: 1%;
   }
   .info h1 {
-    font-size: 2.7rem;
+    font-size: 3.4rem;
     color: #bfcbca;
     margin-bottom: 5px;
     margin-top: 12vh;
   }
   span {
     font-family: "Manrope", sans-serif;
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: #fff;
   }
   .info p {
     font-family: sans-serif;
     color: aliceblue;
     line-height: 27px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   .img-box {
     display: flex;
@@ -173,7 +455,41 @@ span {
   .icon a {
     background-color: aliceblue;
     color: #191970;
-    border-radius: 5px;
-    font-size: 1rem;
+    font-size: 20px;
   }
+
+  /* samsung */
+@media screen and (max-width: 420px) {
+  .info h1 {
+    font-size: 3.4rem;
+    color: #bfcbca;
+    margin-bottom: 5px;
+    margin-top: 12vh;
+  }
+  span {
+    font-family: "Manrope", sans-serif;
+    font-size: 4rem;
+    color: #fff;
+  }
+  .icon a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .info h1 {
+    font-size: 3rem;
+    color: #bfcbca;
+    margin-bottom: 5px;
+    margin-top: 12vh;
+  }
+  span {
+    font-family: "Manrope", sans-serif;
+    font-size: 3rem;
+    color: #fff;
+  }
+  .icon a {
+    font-size: 15px;
+  }
+}
 }
