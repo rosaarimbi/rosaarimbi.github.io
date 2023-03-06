@@ -5,46 +5,24 @@
   align-items: flex-start;
   flex-direction: column;
 
-  /* ff 3.6+ */
-  background: -moz-linear-gradient(
-    105deg,
-    rgba(25, 25, 112, 1) 16%,
-    rgba(191, 203, 202, 1) 86%
-  );
+ /* ff 3.6+ */
+ background:-moz-linear-gradient(90deg, rgba(0, 39, 140, 1) 0%, rgba(4, 90, 160, 1) 25%, rgba(30, 141, 233, 1) 61%, rgba(0, 242, 255, 1) 88%, rgba(0, 255, 255, 1) 100%); 
 
-  /* safari 5.1+,chrome 10+ */
-  background: -webkit-linear-gradient(
-    105deg,
-    rgba(25, 25, 112, 1) 16%,
-    rgba(191, 203, 202, 1) 86%
-  );
+ /* safari 5.1+,chrome 10+ */
+ background:-webkit-linear-gradient(90deg, rgba(0, 39, 140, 1) 0%, rgba(4, 90, 160, 1) 25%, rgba(30, 141, 233, 1) 61%, rgba(0, 242, 255, 1) 88%, rgba(0, 255, 255, 1) 100%);
 
-  /* opera 11.10+ */
-  background: -o-linear-gradient(
-    105deg,
-    rgba(25, 25, 112, 1) 16%,
-    rgba(191, 203, 202, 1) 86%
-  );
+ /* opera 11.10+ */
+ background:-o-linear-gradient(90deg, rgba(0, 39, 140, 1) 0%, rgba(4, 90, 160, 1) 25%, rgba(30, 141, 233, 1) 61%, rgba(0, 242, 255, 1) 88%, rgba(0, 255, 255, 1) 100%);
 
-  /* ie 6-9 */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#BFCBCA', endColorstr='#191970', GradientType=0 );
+ /* ie 6-9 */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00FFFF', endColorstr='#00278C', GradientType=0 );
 
-  /* ie 10+ */
-  background: -ms-linear-gradient(
-    105deg,
-    rgba(25, 25, 112, 1) 16%,
-    rgba(191, 203, 202, 1) 86%
-  );
+ /* ie 10+ */
+ background:-ms-linear-gradient(90deg, rgba(0, 39, 140, 1) 0%, rgba(4, 90, 160, 1) 25%, rgba(30, 141, 233, 1) 61%, rgba(0, 242, 255, 1) 88%, rgba(0, 255, 255, 1) 100%);
 
-  /* global 94%+ browsers support */
-  background: linear-gradient(
-    105deg,
-    rgba(25, 25, 112, 1) 16%,
-    rgba(191, 203, 202, 1) 86%
-  );
+ /* global 94%+ browsers support */
+ background:linear-gradient(90deg, rgba(0, 39, 140, 1) 0%, rgba(4, 90, 160, 1) 25%, rgba(30, 141, 233, 1) 61%, rgba(0, 242, 255, 1) 88%, rgba(0, 255, 255, 1) 100%);
 }
-
-
 .box-info {
   max-width: 50vw;
 }
@@ -123,43 +101,24 @@ span {
     align-items: flex-start;
     flex-direction: column;
   
-    /* ff 3.6+ */
-    background: -moz-linear-gradient(
-      105deg,
-      rgba(25, 25, 112, 1) 16%,
-      rgba(191, 203, 202, 1) 86%
-    );
-  
-    /* safari 5.1+,chrome 10+ */
-    background: -webkit-linear-gradient(
-      105deg,
-      rgba(25, 25, 112, 1) 16%,
-      rgba(191, 203, 202, 1) 86%
-    );
-  
-    /* opera 11.10+ */
-    background: -o-linear-gradient(
-      105deg,
-      rgba(25, 25, 112, 1) 16%,
-      rgba(191, 203, 202, 1) 86%
-    );
-  
-    /* ie 6-9 */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#BFCBCA', endColorstr='#191970', GradientType=0 );
-  
-    /* ie 10+ */
-    background: -ms-linear-gradient(
-      105deg,
-      rgba(25, 25, 112, 1) 16%,
-      rgba(191, 203, 202, 1) 86%
-    );
-  
-    /* global 94%+ browsers support */
-    background: linear-gradient(
-      105deg,
-      rgba(25, 25, 112, 1) 16%,
-      rgba(191, 203, 202, 1) 86%
-    );
+ 
+ /* ff 3.6+ */
+ background:-moz-linear-gradient(90deg, rgba(0, 39, 140, 1) 0%, rgba(4, 90, 160, 1) 25%, rgba(30, 141, 233, 1) 61%, rgba(0, 242, 255, 1) 88%, rgba(0, 255, 255, 1) 100%); 
+
+ /* safari 5.1+,chrome 10+ */
+ background:-webkit-linear-gradient(90deg, rgba(0, 39, 140, 1) 0%, rgba(4, 90, 160, 1) 25%, rgba(30, 141, 233, 1) 61%, rgba(0, 242, 255, 1) 88%, rgba(0, 255, 255, 1) 100%);
+
+ /* opera 11.10+ */
+ background:-o-linear-gradient(90deg, rgba(0, 39, 140, 1) 0%, rgba(4, 90, 160, 1) 25%, rgba(30, 141, 233, 1) 61%, rgba(0, 242, 255, 1) 88%, rgba(0, 255, 255, 1) 100%);
+
+ /* ie 6-9 */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00FFFF', endColorstr='#00278C', GradientType=0 );
+
+ /* ie 10+ */
+ background:-ms-linear-gradient(90deg, rgba(0, 39, 140, 1) 0%, rgba(4, 90, 160, 1) 25%, rgba(30, 141, 233, 1) 61%, rgba(0, 242, 255, 1) 88%, rgba(0, 255, 255, 1) 100%);
+
+ /* global 94%+ browsers support */
+ background:linear-gradient(90deg, rgba(0, 39, 140, 1) 0%, rgba(4, 90, 160, 1) 25%, rgba(30, 141, 233, 1) 61%, rgba(0, 242, 255, 1) 88%, rgba(0, 255, 255, 1) 100%);
   }
   .box-info {
     max-width: 53vw;
