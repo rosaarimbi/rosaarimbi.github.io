@@ -1,27 +1,40 @@
-.hero {
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,600;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+
+#hero {
   display: flex;
   height: 100vh;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
 
- /* ff 3.6+ */
- background:-moz-linear-gradient(90deg, rgba(0, 39, 140, 1) 0%, rgba(4, 90, 160, 1) 25%, rgba(30, 141, 233, 1) 61%, rgba(0, 242, 255, 1) 88%, rgba(0, 255, 255, 1) 100%); 
+  /* Serious gradient: Black and grey*/
+  color: whitesmoke;
+  background: linear-gradient(
+    -45deg,
+    #121212,
+    #383836,
+    #2c3e54,
+    #316e83,
+    #468590,
+    #4a5c97,
+    #a4a4a4,
+    #709ab2
+  );
+  background-size: 400% 400%;
+  animation: backgroundChange3 15s ease infinite;
+}
 
- /* safari 5.1+,chrome 10+ */
- background:-webkit-linear-gradient(90deg, rgba(0, 39, 140, 1) 0%, rgba(4, 90, 160, 1) 25%, rgba(30, 141, 233, 1) 61%, rgba(0, 242, 255, 1) 88%, rgba(0, 255, 255, 1) 100%);
-
- /* opera 11.10+ */
- background:-o-linear-gradient(90deg, rgba(0, 39, 140, 1) 0%, rgba(4, 90, 160, 1) 25%, rgba(30, 141, 233, 1) 61%, rgba(0, 242, 255, 1) 88%, rgba(0, 255, 255, 1) 100%);
-
- /* ie 6-9 */
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00FFFF', endColorstr='#00278C', GradientType=0 );
-
- /* ie 10+ */
- background:-ms-linear-gradient(90deg, rgba(0, 39, 140, 1) 0%, rgba(4, 90, 160, 1) 25%, rgba(30, 141, 233, 1) 61%, rgba(0, 242, 255, 1) 88%, rgba(0, 255, 255, 1) 100%);
-
- /* global 94%+ browsers support */
- background:linear-gradient(90deg, rgba(0, 39, 140, 1) 0%, rgba(4, 90, 160, 1) 25%, rgba(30, 141, 233, 1) 61%, rgba(0, 242, 255, 1) 88%, rgba(0, 255, 255, 1) 100%);
+@keyframes backgroundChange3 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .box-info {
   max-width: 50vw;
@@ -92,33 +105,109 @@ span {
   left: 65%;
 }
 
+/* Third Row: Border Animations while playing with colors */
+body {
+  position: relative;
+  z-index: 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+body::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  left: -10%;
+  top: -10%;
+  width: 200%;
+  height: 200%;
+  background-color: #399953;
+  background-repeat: no-repeat;
+  background-size: 80% 80%, 50% 50%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  background-image: linear-gradient(#bdc3c7, #bdc3c7),
+    linear-gradient(#2c3e50, #1b4e81), linear-gradient(#6a65f8, #1d2671),
+    linear-gradient(#1d2671, #6dd5ed);
+  animation: rotate4 10s linear infinite;
+}
+body::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 2px;
+  top: 2px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  background: white;
+  border-radius: 5px;
+}
+
+@keyframes rotate4 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
 /* macbook */
-@media screen and (max-width: 1280px)  {
+@media screen and (max-width: 1280px) {
   .hero {
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-  
- 
- /* ff 3.6+ */
- background:-moz-linear-gradient(90deg, rgba(0, 39, 140, 1) 0%, rgba(4, 90, 160, 1) 25%, rgba(30, 141, 233, 1) 61%, rgba(0, 242, 255, 1) 88%, rgba(0, 255, 255, 1) 100%); 
 
- /* safari 5.1+,chrome 10+ */
- background:-webkit-linear-gradient(90deg, rgba(0, 39, 140, 1) 0%, rgba(4, 90, 160, 1) 25%, rgba(30, 141, 233, 1) 61%, rgba(0, 242, 255, 1) 88%, rgba(0, 255, 255, 1) 100%);
+    /* ff 3.6+ */
+    background: -moz-linear-gradient(
+      90deg,
+      rgba(0, 39, 140, 1) 0%,
+      rgba(4, 90, 160, 1) 25%,
+      rgba(30, 141, 233, 1) 61%,
+      rgba(0, 242, 255, 1) 88%,
+      rgba(0, 255, 255, 1) 100%
+    );
 
- /* opera 11.10+ */
- background:-o-linear-gradient(90deg, rgba(0, 39, 140, 1) 0%, rgba(4, 90, 160, 1) 25%, rgba(30, 141, 233, 1) 61%, rgba(0, 242, 255, 1) 88%, rgba(0, 255, 255, 1) 100%);
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-linear-gradient(
+      90deg,
+      rgba(0, 39, 140, 1) 0%,
+      rgba(4, 90, 160, 1) 25%,
+      rgba(30, 141, 233, 1) 61%,
+      rgba(0, 242, 255, 1) 88%,
+      rgba(0, 255, 255, 1) 100%
+    );
 
- /* ie 6-9 */
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00FFFF', endColorstr='#00278C', GradientType=0 );
+    /* opera 11.10+ */
+    background: -o-linear-gradient(
+      90deg,
+      rgba(0, 39, 140, 1) 0%,
+      rgba(4, 90, 160, 1) 25%,
+      rgba(30, 141, 233, 1) 61%,
+      rgba(0, 242, 255, 1) 88%,
+      rgba(0, 255, 255, 1) 100%
+    );
 
- /* ie 10+ */
- background:-ms-linear-gradient(90deg, rgba(0, 39, 140, 1) 0%, rgba(4, 90, 160, 1) 25%, rgba(30, 141, 233, 1) 61%, rgba(0, 242, 255, 1) 88%, rgba(0, 255, 255, 1) 100%);
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00FFFF', endColorstr='#00278C', GradientType=0 );
 
- /* global 94%+ browsers support */
- background:linear-gradient(90deg, rgba(0, 39, 140, 1) 0%, rgba(4, 90, 160, 1) 25%, rgba(30, 141, 233, 1) 61%, rgba(0, 242, 255, 1) 88%, rgba(0, 255, 255, 1) 100%);
+    /* ie 10+ */
+    background: -ms-linear-gradient(
+      90deg,
+      rgba(0, 39, 140, 1) 0%,
+      rgba(4, 90, 160, 1) 25%,
+      rgba(30, 141, 233, 1) 61%,
+      rgba(0, 242, 255, 1) 88%,
+      rgba(0, 255, 255, 1) 100%
+    );
+
+    /* global 94%+ browsers support */
+    background: linear-gradient(
+      90deg,
+      rgba(0, 39, 140, 1) 0%,
+      rgba(4, 90, 160, 1) 25%,
+      rgba(30, 141, 233, 1) 61%,
+      rgba(0, 242, 255, 1) 88%,
+      rgba(0, 255, 255, 1) 100%
+    );
   }
   .box-info {
     max-width: 53vw;
@@ -187,50 +276,49 @@ span {
   }
   .img-box:hover .main-img {
     left: 60%;
-  }  
+  }
 }
 
-
 /* tablet */
-@media screen and (max-width: 900px)  {
+@media screen and (max-width: 900px) {
   .hero {
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-  
+
     /* ff 3.6+ */
     background: -moz-linear-gradient(
       105deg,
       rgba(25, 25, 112, 1) 16%,
       rgba(191, 203, 202, 1) 86%
     );
-  
+
     /* safari 5.1+,chrome 10+ */
     background: -webkit-linear-gradient(
       105deg,
       rgba(25, 25, 112, 1) 16%,
       rgba(191, 203, 202, 1) 86%
     );
-  
+
     /* opera 11.10+ */
     background: -o-linear-gradient(
       105deg,
       rgba(25, 25, 112, 1) 16%,
       rgba(191, 203, 202, 1) 86%
     );
-  
+
     /* ie 6-9 */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#BFCBCA', endColorstr='#191970', GradientType=0 );
-  
+
     /* ie 10+ */
     background: -ms-linear-gradient(
       105deg,
       rgba(25, 25, 112, 1) 16%,
       rgba(191, 203, 202, 1) 86%
     );
-  
+
     /* global 94%+ browsers support */
     background: linear-gradient(
       105deg,
@@ -304,12 +392,11 @@ span {
   }
   .img-box:hover .main-img {
     left: 65%;
-  }  
+  }
 }
 
-
 /* ipad */
-@media screen and (max-width: 835px)  {
+@media screen and (max-width: 835px) {
   .info p {
     font-family: sans-serif;
     color: aliceblue;
@@ -415,37 +502,37 @@ span {
   }
 
   /* samsung */
-@media screen and (max-width: 420px) {
-  .info h1 {
-    font-size: 3.4rem;
-    color: #bfcbca;
-    margin-bottom: 5px;
-    margin-top: 12vh;
+  @media screen and (max-width: 420px) {
+    .info h1 {
+      font-size: 3.4rem;
+      color: #bfcbca;
+      margin-bottom: 5px;
+      margin-top: 12vh;
+    }
+    span {
+      font-family: "Manrope", sans-serif;
+      font-size: 4rem;
+      color: #fff;
+    }
+    .icon a {
+      font-size: 18px;
+    }
   }
-  span {
-    font-family: "Manrope", sans-serif;
-    font-size: 4rem;
-    color: #fff;
-  }
-  .icon a {
-    font-size: 18px;
-  }
-}
 
-@media screen and (max-width: 376px) {
-  .info h1 {
-    font-size: 3rem;
-    color: #bfcbca;
-    margin-bottom: 5px;
-    margin-top: 12vh;
+  @media screen and (max-width: 376px) {
+    .info h1 {
+      font-size: 3rem;
+      color: #bfcbca;
+      margin-bottom: 5px;
+      margin-top: 12vh;
+    }
+    span {
+      font-family: "Manrope", sans-serif;
+      font-size: 3rem;
+      color: #fff;
+    }
+    .icon a {
+      font-size: 15px;
+    }
   }
-  span {
-    font-family: "Manrope", sans-serif;
-    font-size: 3rem;
-    color: #fff;
-  }
-  .icon a {
-    font-size: 15px;
-  }
-}
 }
