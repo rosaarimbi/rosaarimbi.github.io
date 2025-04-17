@@ -1,92 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rosa Arimbi | Software Engineer</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Rosa Arimbi | Software Engineer & Programming Mentor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+      overflow-x: hidden;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      top: 0;
+      left: 0;
+    }
+
+    .hero, .dual-role, .quote, .project-section {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 10%;
+      min-height: 100vh;
+    }
+
+    .content {
+      max-width: 600px;
+    }
+
+    h1, h2, h3 {
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .typing-text {
+      color: #ffffff;
+    }
+
+    .cursor {
+      display: inline-block;
+      font-weight: 600;
+      color: #ffffff;
+      animation: blink 0.7s infinite;
+      font-size: 2rem;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    p {
+      font-size: 1.05rem;
+      opacity: 0.95;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin-right: 15px;
+      text-decoration: none;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.12);
+      padding: 10px 16px;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+
+    .social-links a:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: translateY(-2px);
+    }
+
+    .hero-image img {
+      width: 100%;
+      border-radius: 20px;
+      transition: transform 0.4s ease;
+    }
+
+    .hero-image img:hover {
+      transform: scale(1.05) rotate(1deg);
+    }
+
+    .dual-role {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      padding: 60px 10%;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .role {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .role:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+
+    .role h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .role ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .role ul li::before {
+      content: '✔';
+      margin-right: 8px;
+      color: #00ffd0;
+    }
+
+    .skills-tools {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      padding: 60px 10%;
+    }
+
+    .skill, .tools {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 15px;
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .skill h2, .tools h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .skill ul, .tools ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .skill ul li::before, .tools ul li::before {
+      content: '🔧';
+      margin-right: 8px;
+      color: #00ffd0;
+    }
+
+    .project-section {
+      padding: 60px 10%;
+    }
+
+    .project-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .project-list li {
+      margin-bottom: 10px;
+    }
+
+    .quote {
+      text-align: center;
+      font-style: italic;
+      padding: 40px 10%;
+      background: rgba(255, 255, 255, 0.05);
+      font-size: 1.2rem;
+      font-weight: 300;
+      letter-spacing: 0.3px;
+    }
+
+    .wave {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 0;
+    }
+  </style>
 </head>
 <body>
-  <header class="hero">
-    <nav class="navbar">
-      <div class="logo">Rosa Arimbi</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="../assets/file/resume_rosaarimbi_2024.pdf" target="_blank" class="btn">Resume</a></li>
+
+  <div id="particles-js"></div>
+
+  <section class="hero" data-aos="fade-up">
+    <div class="content">
+      <h1><span class="typing-text"></span><span class="cursor">|</span></h1>
+      <p>An experienced Software Engineer with 4+ years of experience working with clients in manufacturing, healthcare, livestock, and more. Known for problem-solving and building both web and desktop applications.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Download Resume (PDF)"><i class="fas fa-file-pdf"></i> Resume</a>
+        <a href="https://github.com/rosaarimbi/" target="_blank" aria-label="Rosa Arimbi GitHub"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/rosa-arimbi/" target="_blank" aria-label="Rosa Arimbi LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="../assets/img/photoprofile.png" alt="Portrait of Rosa Arimbi">
+    </div>
+    <svg class="wave" viewBox="0 0 1440 320">
+      <path fill="#ffffff" fill-opacity="0.05" d="M0,160L60,154.7C120,149,240,139,360,144C480,149,600,171,720,176C840,181,960,171,1080,149.3C1200,128,1320,96,1380,80L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+    </svg>
+  </section>
+
+  <section class="dual-role">
+    <div class="role" data-aos="fade-right">
+      <h3>👨‍💻 Software Engineer</h3>
+      <ul>
+        <li>Build Web & Desktop Applications</li>
+        <li>Work with Vue.js, C#, SQL</li>
+        <li>Collaborate with multi-industry clients</li>
       </ul>
-    </nav>
-    <div class="hero-content">
-      <div class="text">
-        <h1><span class="typed-text"></span><span class="cursor">&nbsp;</span></h1>
-        <p>
-          Software Engineer with 3+ years of experience in building web and desktop applications
-          for clients in manufacturing, healthcare, and other industries.
-        </p>
-        <div class="social-icons">
-          <a href="https://github.com/rosaarimbi" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/rosa-arimbi/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        </div>
-      </div>
-      <div class="profile-img">
-        <img src="../assets/img/photoprofile.png" alt="Rosa Arimbi" />
-      </div>
     </div>
-  </header>
-
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      I specialize in crafting full-stack applications, with a passion for clean code,
-      intuitive UI/UX, and scalable architecture. Outside of coding, I love learning new tech trends and contributing to open-source.
-    </p>
-  </section>
-
-  <section id="portfolio" class="section">
-    <h2>Selected Projects</h2>
-    <div class="projects">
-      <div class="project-card">
-        <img src="../assets/img/project1.png" alt="Project 1 Screenshot" />
-        <h3>Inventory Dashboard</h3>
-        <p>Real-time inventory tracking dashboard with data visualization for manufacturers.</p>
-        <div class="project-links">
-          <a href="https://github.com/rosaarimbi/inventory-dashboard" target="_blank" class="btn">GitHub</a>
-          <a href="#" target="_blank" class="btn btn-outline">Live Demo</a>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <img src="../assets/img/project2.png" alt="Project 2 Screenshot" />
-        <h3>Healthcare Booking System</h3>
-        <p>Clinic booking system with admin dashboard, email reminders, and live appointment updates.</p>
-        <div class="project-links">
-          <a href="https://github.com/rosaarimbi/healthcare-app" target="_blank" class="btn">GitHub</a>
-          <a href="#" target="_blank" class="btn btn-outline">Live Demo</a>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <img src="../assets/img/project3.png" alt="Project 3 Screenshot" />
-        <h3>Livestock Tracker</h3>
-        <p>Cross-platform desktop app to manage livestock data, health records, and productivity.</p>
-        <div class="project-links">
-          <a href="https://github.com/rosaarimbi/livestock-tracker" target="_blank" class="btn">GitHub</a>
-        </div>
-      </div>
+    <div class="role" data-aos="fade-left">
+      <h3>📚 Programming Mentor</h3>
+      <ul>
+        <li>Teach Web Development & Logic Thinking</li>
+        <li>Mentor junior devs & students</li>
+        <li>Develop coding tutorials & workshops</li>
+      </ul>
     </div>
   </section>
 
-  <section id="contact" class="section contact">
-    <h2>Contact Me</h2>
-    <p>Let's build something great together! Email me at <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+  <section class="skills-tools" data-aos="fade-up">
+    <div class="skill" data-aos="zoom-in">
+      <h2>💻 Skills</h2>
+      <ul>
+        <li>JavaScript, Vue.js, C#, Python</li>
+        <li>SQL, REST API, HTML/CSS</li>
+        <li>Desktop & Web App Development</li>
+      </ul>
+    </div>
+    <div class="tools" data-aos="zoom-in">
+      <h2>🛠 Tools & Tech Stack</h2>
+      <ul>
+        <li>Visual Studio Code, GitHub, Git</li>
+        <li>Figma, Trello, Notion</li>
+        <li>Postman, Azure DevOps</li>
+      </ul>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Rosa Arimbi. All rights reserved.</p>
-  </footer>
+  <section class="quote" data-aos="fade-up">
+    <p>"Coding is my work—teaching is how I give back."</p>
+  </section>
 
-  <script src="script.js"></script>
+  <script>
+    const phrases = [
+      "I'm Rosa Arimbi 👋",
+      "I'm a Software Engineer.",
+      "I build Web and Desktop Apps.",
+      "Let's build something together.",
+      "I support beginners in their coding journey."
+    ];
+
+    const typingText = document.querySelector('.typing-text');
+    const cursor = document.querySelector('.cursor');
+    let phraseIndex = 0;
+    let letterIndex = 0;
+    let currentPhrase = '';
+    let isDeleting = false;
+
+    function type() {
+      currentPhrase = phrases[phraseIndex];
+      typingText.textContent = isDeleting
+        ? currentPhrase.substring(0, letterIndex--)
+        : currentPhrase.substring(0, letterIndex++);
+      if (!isDeleting && letterIndex === currentPhrase.length) {
+        isDeleting = true;
+        setTimeout(type, 1500);
+      } else if (isDeleting && letterIndex === 0) {
+        isDeleting = false;
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        setTimeout(type, 300);
+      } else {
+        setTimeout(type, isDeleting ? 50 : 100);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(type, 500);
+    });
+  </script>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60 },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        size: { value: 2 },
+        move: { speed: 1 },
+        line_linked: { enable: true, color: "#ffffff" }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "repulse" }
+        }
+      }
+    });
+  </script>
+
 </body>
 </html>
