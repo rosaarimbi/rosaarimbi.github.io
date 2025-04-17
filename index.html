@@ -1,34 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Rosa Arimbi || Page</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rosa Arimbi | Software Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-	<div id="hero">
-		<div class="info">
-			<h1>Hello! I'm</h1>		   
-			<span>Rosa Arimbi</span></span>
-			<div class="box-info">
-			<p>An experienced Software Engineer with 3+ years of experience working
-				with companies with clients in manufacturing, healthcare, livestock, 
-				and other industries. Good reputation in troubleshooting and improving
-				web development and creating desktop applications.</p>
-			</div>
-			<div class="icon">
-				<a href="../assets/file/resume_rosaarimbi_2024.pdf" target="_blank" class="fa fa-file-pdf-o"> Resume</a>
-				<a href="https://github.com/rosaarimbi/" target="_blank" class="fa fa-github-square"> Github</a>
-				<a href="https://www.linkedin.com/in/rosa-arimbi/" target="_blank" class="fa fa-linkedin-square"> Linkedin</a>	
-			</div>
-		</div>
-		<div class="img-box">
-			<img src="../assets/img/pattern.png" class="back-img">
-			<img src="../assets/img/photoprofile.png" class="main-img">
-		</div>
-	</div>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">Rosa Arimbi</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="../assets/file/resume_rosaarimbi_2024.pdf" target="_blank" class="btn">Resume</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <div class="text">
+        <h1><span class="typed-text"></span><span class="cursor">&nbsp;</span></h1>
+        <p>
+          Software Engineer with 3+ years of experience in building web and desktop applications
+          for clients in manufacturing, healthcare, and other industries.
+        </p>
+        <div class="social-icons">
+          <a href="https://github.com/rosaarimbi" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/rosa-arimbi/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="profile-img">
+        <img src="../assets/img/photoprofile.png" alt="Rosa Arimbi" />
+      </div>
+    </div>
+  </header>
 
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I specialize in crafting full-stack applications, with a passion for clean code,
+      intuitive UI/UX, and scalable architecture. Outside of coding, I love learning new tech trends and contributing to open-source.
+    </p>
+  </section>
+
+  <section id="portfolio" class="section">
+    <h2>Selected Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="../assets/img/project1.png" alt="Project 1 Screenshot" />
+        <h3>Inventory Dashboard</h3>
+        <p>Real-time inventory tracking dashboard with data visualization for manufacturers.</p>
+        <div class="project-links">
+          <a href="https://github.com/rosaarimbi/inventory-dashboard" target="_blank" class="btn">GitHub</a>
+          <a href="#" target="_blank" class="btn btn-outline">Live Demo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="../assets/img/project2.png" alt="Project 2 Screenshot" />
+        <h3>Healthcare Booking System</h3>
+        <p>Clinic booking system with admin dashboard, email reminders, and live appointment updates.</p>
+        <div class="project-links">
+          <a href="https://github.com/rosaarimbi/healthcare-app" target="_blank" class="btn">GitHub</a>
+          <a href="#" target="_blank" class="btn btn-outline">Live Demo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="../assets/img/project3.png" alt="Project 3 Screenshot" />
+        <h3>Livestock Tracker</h3>
+        <p>Cross-platform desktop app to manage livestock data, health records, and productivity.</p>
+        <div class="project-links">
+          <a href="https://github.com/rosaarimbi/livestock-tracker" target="_blank" class="btn">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <p>Let's build something great together! Email me at <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rosa Arimbi. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
